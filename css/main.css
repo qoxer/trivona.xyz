@@ -1,0 +1,80 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    font-family: 'Roboto', sans-serif;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Кнопка */
+button, .button {
+    background-color: #ffffff;
+    color: #121212;
+    border: 2px solid #ffffff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 0;
+    text-decoration: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Эффект на кнопку */
+button:hover, .button:hover {
+    background-color: #121212;
+    color: #ffffff;
+    transform: translateY(-4px); /* Слегка поднимаем кнопку */
+}
+
+/* Центрирование контейнера */
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.content {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
